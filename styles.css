@@ -37,7 +37,7 @@ body {
   font-weight: 300;
 }
 
-/* ─── NAV ─── */
+/* --- NAV --- */
 nav {
   position: fixed;
   top: 0;
@@ -128,7 +128,7 @@ nav {
   color: white !important;
 }
 
-/* ─── HERO ─── */
+/* --- HERO --- */
 .hero {
   min-height: 100vh;
   display: grid;
@@ -284,6 +284,9 @@ nav {
 .logo-display img {
   width: 340px;
   max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
   filter: drop-shadow(0 20px 60px rgba(29, 66, 138, 0.2));
   animation: float 6s ease-in-out infinite;
 }
@@ -346,7 +349,7 @@ nav {
   font-weight: 400;
 }
 
-/* ─── OPPORTUNITY BAND ─── */
+/* --- OPPORTUNITY BAND --- */
 .opportunity-band {
   background: var(--forest);
   padding: 80px 120px;
@@ -437,7 +440,7 @@ nav {
   font-weight: 400;
 }
 
-/* ─── SECTION SHARED ─── */
+/* --- SECTION SHARED --- */
 .section-eyebrow {
   font-size: 0.72rem;
   letter-spacing: 0.22em;
@@ -467,7 +470,7 @@ nav {
   color: var(--forest);
 }
 
-/* ─── METHODOLOGY ─── */
+/* --- METHODOLOGY --- */
 .methodology {
   padding: 120px 120px;
   background: var(--off-white);
@@ -570,7 +573,7 @@ nav {
   transform: scaleX(1);
 }
 
-/* ─── INSIDE OUT ─── */
+/* --- INSIDE OUT --- */
 .inside-out {
   background: var(--cream);
   padding: 120px;
@@ -685,7 +688,7 @@ nav {
   font-weight: 500;
 }
 
-/* ─── STEWARDSHIP ─── */
+/* --- STEWARDSHIP --- */
 .stewardship {
   background: var(--forest);
   padding: 140px 120px;
@@ -847,7 +850,7 @@ nav {
   line-height: 1.5;
 }
 
-/* ─── SERVICES ─── */
+/* --- SERVICES --- */
 .services {
   padding: 120px;
   background: var(--off-white);
@@ -1005,7 +1008,7 @@ nav {
   user-select: none;
 }
 
-/* ─── FUTURE NORTH STAR ─── */
+/* --- FUTURE NORTH STAR --- */
 .future-north-star {
   background: var(--off-white);
   padding: 120px 120px;
@@ -1180,7 +1183,7 @@ nav {
   font-weight: 500;
 }
 
-/* ─── EMERGING SERVICE PATH ─── */
+/* --- EMERGING SERVICE PATH --- */
 .emerging-path {
   background: var(--forest);
   padding: 120px 120px;
@@ -1336,7 +1339,7 @@ nav {
   margin-top: 4px !important;
 }
 
-/* ─── TECHNOLOGY & NEXT DECADE ─── */
+/* --- TECHNOLOGY & NEXT DECADE --- */
 .tech-decade {
   background: var(--cream);
   padding: 120px 120px;
@@ -1443,7 +1446,7 @@ nav {
   transition: color 0.3s, border-color 0.3s;
 }
 
-/* ─── FUTURE CLOSING ─── */
+/* --- FUTURE CLOSING --- */
 .future-closing {
   text-align: center;
   max-width: 720px;
@@ -1479,7 +1482,7 @@ nav {
   display: inline-block;
 }
 
-/* ─── TESTIMONIALS ─── */
+/* --- TESTIMONIALS --- */
 
 .testimonials {
   background: var(--forest);
@@ -1623,7 +1626,63 @@ nav {
   line-height: 1.4;
 }
 
-/* ─── CTA ─── */
+/* --- SEARCH QUESTIONS --- */
+.search-questions {
+  background: var(--cream);
+  padding: 120px;
+}
+
+.search-questions-header {
+  max-width: 780px;
+  margin-bottom: 54px;
+}
+
+.search-questions-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 680px;
+}
+
+.search-question-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.search-question-card {
+  background: white;
+  border: 1px solid rgba(12, 35, 64, 0.08);
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: 0 14px 36px rgba(12, 35, 64, 0.04);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+@media (hover: hover) and (min-width: 769px) {
+  .search-question-card:hover {
+    border-color: rgba(212, 168, 62, 0.32);
+    box-shadow: 0 22px 48px rgba(12, 35, 64, 0.09);
+    transform: translateY(-5px);
+  }
+}
+
+.search-question-card h3 {
+  color: var(--forest);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.search-question-card p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* --- CTA --- */
 .cta-section {
   background: var(--forest);
   padding: 120px;
@@ -1706,7 +1765,7 @@ nav {
   color: var(--gold);
 }
 
-/* ─── FOOTER ─── */
+/* --- FOOTER --- */
 footer {
   background: #050c18;
   padding: 60px 120px;
@@ -1742,6 +1801,23 @@ footer::before {
   max-width: 280px;
   font-weight: 300;
   margin-bottom: 20px;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 0.82rem;
+  font-style: normal;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: white;
 }
 
 .footer-social { display: flex; gap: 10px; }
@@ -1804,7 +1880,7 @@ footer::before {
   letter-spacing: 0.04em;
 }
 
-/* ─── ANIMATIONS ─── */
+/* --- ANIMATIONS --- */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -1866,7 +1942,7 @@ footer.line-visible::before { transform: scaleX(1); }
   transition: left 0.55s ease;
 }
 
-/* ─── MOBILE MENU ─── */
+/* --- MOBILE MENU --- */
 .nav-mobile-toggle {
   display: none;
   flex-direction: column;
@@ -1886,7 +1962,7 @@ footer.line-visible::before { transform: scaleX(1); }
 .nav-mobile-toggle.active span:nth-child(2) { opacity: 0; }
 .nav-mobile-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-/* ─── RESPONSIVE ─── */
+/* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
   nav { padding: 15px 40px; }
 
@@ -1899,6 +1975,7 @@ footer.line-visible::before { transform: scaleX(1); }
   .inside-out,
   .stewardship,
   .services,
+  .search-questions,
   .cta-section,
   footer {
     padding-left: 60px;
@@ -1906,6 +1983,7 @@ footer.line-visible::before { transform: scaleX(1); }
   }
 
   .method-grid { grid-template-columns: repeat(2, 1fr); }
+  .search-question-grid { grid-template-columns: repeat(2, 1fr); }
 
   .testimonials { padding-left: 60px; padding-right: 60px; }
 }
@@ -1978,6 +2056,55 @@ footer.line-visible::before { transform: scaleX(1); }
   .services-grid { grid-template-columns: 1fr; }
   .service-card.featured { grid-column: span 1; }
   .service-card { padding: 40px 24px; }
+
+  .search-questions { padding: 80px 24px; }
+  .search-question-grid { grid-template-columns: 1fr; }
+  .search-question-card {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .search-question-card h3 {
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    min-height: 64px;
+    padding: 20px 52px 20px 22px;
+    position: relative;
+  }
+
+  .search-question-card h3::after {
+    content: '+';
+    color: var(--gold);
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .search-question-card p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 22px;
+    transition: max-height 0.28s ease, opacity 0.2s ease, padding 0.28s ease;
+  }
+
+  .search-question-card.active h3::after {
+    content: '-';
+  }
+
+  .search-question-card.active p {
+    max-height: 260px;
+    opacity: 1;
+    padding: 0 22px 22px;
+  }
 
   /* Future sections mobile */
   .future-north-star,
