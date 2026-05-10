@@ -735,6 +735,35 @@ nav {
   margin-bottom: 24px;
 }
 
+/* ─── CLINICAL LEADERSHIP ─── */
+.clinical-leadership {
+  background: var(--forest-light);
+  padding: 140px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.clinical-leadership::before {
+  content: '';
+  position: absolute;
+  right: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(29, 66, 138, 0.1) 0%, transparent 70%);
+}
+
+.clinical-leadership-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 120px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
 .grandfather-quote {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(212, 168, 62, 0.3);
@@ -1898,6 +1927,7 @@ footer.line-visible::before { transform: scaleX(1); }
   .methodology,
   .inside-out,
   .stewardship,
+  .clinical-leadership,
   .services,
   .cta-section,
   footer {
@@ -1972,7 +2002,8 @@ footer.line-visible::before { transform: scaleX(1); }
 
   .inside-out { grid-template-columns: 1fr; padding: 80px 24px; gap: 50px; }
   .stewardship { padding: 80px 24px; }
-  .stewardship-inner { grid-template-columns: 1fr; gap: 60px; }
+  .clinical-leadership { padding: 80px 24px; }
+  .stewardship-inner, .clinical-leadership-inner { grid-template-columns: 1fr; gap: 60px; }
 
   .services { padding: 80px 24px; }
   .services-grid { grid-template-columns: 1fr; }
